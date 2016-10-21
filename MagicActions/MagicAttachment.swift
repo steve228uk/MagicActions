@@ -9,12 +9,16 @@
 import UIKit
 
 public protocol MagicAttachment {
-
+    
+    /// The source content that can be captured and output in NSAttributedString's fragments.
     var source: Any { get }
     
+    /// The rendered attributed string. This might be a prerendered image.
     var rendered: NSAttributedString { get }
     
 }
+
+// MARK: - NSTextAttachment Compliance
 
 extension NSTextAttachment: MagicAttachment {
     
