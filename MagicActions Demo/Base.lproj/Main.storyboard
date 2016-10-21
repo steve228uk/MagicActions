@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A319" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9ej-2U-tHz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Magic Actions-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MagicActions_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7kC-Qr-GJA" customClass="MagicTextField" customModule="MagicActions">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="623" id="NTQ-ap-kE2"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="magicButton" destination="eym-LL-2Qf" id="HsE-hN-bQG"/>
+                                </connections>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJ6-59-7pF">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eym-LL-2Qf" customClass="MagicButton" customModule="MagicActions">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Start Typing…">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87724908509999999" green="0.88488803869999999" blue="0.8884280416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="eym-LL-2Qf" firstAttribute="top" secondItem="hJ6-59-7pF" secondAttribute="top" constant="8" id="7Ry-et-eFy"/>
+                                    <constraint firstAttribute="trailing" secondItem="eym-LL-2Qf" secondAttribute="trailing" constant="8" id="8Ca-mo-nhN"/>
+                                    <constraint firstAttribute="height" constant="44" id="GzX-sr-ScM"/>
+                                    <constraint firstAttribute="bottom" secondItem="eym-LL-2Qf" secondAttribute="bottom" constant="8" id="Tvv-JF-YK7"/>
+                                    <constraint firstItem="eym-LL-2Qf" firstAttribute="leading" secondItem="hJ6-59-7pF" secondAttribute="leading" constant="8" id="YJK-q9-oBj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hJ6-59-7pF" firstAttribute="top" secondItem="7kC-Qr-GJA" secondAttribute="bottom" id="Kqm-pt-nrp"/>
+                            <constraint firstItem="7kC-Qr-GJA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Q8f-NU-lKu"/>
+                            <constraint firstItem="7kC-Qr-GJA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="c2a-U2-XeE"/>
+                            <constraint firstAttribute="trailing" secondItem="7kC-Qr-GJA" secondAttribute="trailing" id="fmX-Ph-LTn"/>
+                            <constraint firstItem="hJ6-59-7pF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pz4-HR-xMN"/>
+                            <constraint firstAttribute="trailing" secondItem="hJ6-59-7pF" secondAttribute="trailing" id="sIf-fU-Tjm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Magic Actions" id="7F0-PH-Dgw"/>
+                    <connections>
+                        <outlet property="heightConstraint" destination="NTQ-ap-kE2" id="xdV-QL-nrB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="137.18140929535232"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OJv-gs-FW3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9ej-2U-tHz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JzG-XZ-BSP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="G8r-1k-5yJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NGY-He-GPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
