@@ -21,6 +21,7 @@
 		28C961BC1DBA202500495192 /* MagicAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C961BB1DBA202500495192 /* MagicAttachment.swift */; };
 		28D1F3261DB91C3800CF2FB1 /* NSAttributedString + RemoveLastWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1F3251DB91C3800CF2FB1 /* NSAttributedString + RemoveLastWord.swift */; };
 		28D1F3281DB91D9200CF2FB1 /* MagicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1F3271DB91D9200CF2FB1 /* MagicButton.swift */; };
+		28E244E01DE878440083EC1B /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E244DF1DE878440083EC1B /* HelpViewController.swift */; };
 		28FC92791DB918A0000545A9 /* MagicTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC92781DB918A0000545A9 /* MagicTextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		28C961BB1DBA202500495192 /* MagicAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicAttachment.swift; sourceTree = "<group>"; };
 		28D1F3251DB91C3800CF2FB1 /* NSAttributedString + RemoveLastWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString + RemoveLastWord.swift"; sourceTree = "<group>"; };
 		28D1F3271DB91D9200CF2FB1 /* MagicButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicButton.swift; sourceTree = "<group>"; };
+		28E244DF1DE878440083EC1B /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		28FC92781DB918A0000545A9 /* MagicTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +124,7 @@
 				286D9DC11DB909C9000FDF12 /* Assets.xcassets */,
 				286D9DC31DB909C9000FDF12 /* LaunchScreen.storyboard */,
 				286D9DC61DB909C9000FDF12 /* Info.plist */,
+				28E244DF1DE878440083EC1B /* HelpViewController.swift */,
 			);
 			path = "MagicActions Demo";
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				286D9DBD1DB909C9000FDF12 /* ViewController.swift in Sources */,
+				28E244E01DE878440083EC1B /* HelpViewController.swift in Sources */,
 				286D9DBB1DB909C9000FDF12 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
